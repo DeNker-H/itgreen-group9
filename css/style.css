@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #f1f6fc31;
+}
+section,footer{
+    padding: 54px 0;
+}
+
+.linkUSP {
+    text-decoration: none;
+    color: #2aac2a;
+   }
+   
+.linkUSP:hover {
+    text-decoration: underline;
+    color: red;
+   }
+   
+h1{
+    color: white;
+}
+.Epigrafe{
+    background-color: #218f219c;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.1s;
+}
+.titulo{
+    text-align: left;
+    font-size: 1px;
+}
+p{
+    color: black;
+}
+.portfolio{
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #2aac2a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: rgb(16, 107, 21) ;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #2aac2a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.cuide-do-ambiente-onde-voce-vive .container{
+    display: flex;
+    align-items: center;
+}
+.cuide-do-ambiente-onde-voce-vive-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.cuide-do-ambiente-onde-voce-vive .cuide-do-ambiente-onde-voce-vive-text h3{
+    font-size: 30px;
+
+}
+.cuide-do-ambiente-onde-voce-vive .cuide-do-ambiente-onde-voce-vive-text p{
+    margin: 5px 0 10px 0;
+}
+.cuide-do-ambiente-onde-voce-vive .cuide-do-ambiente-onde-voce-vive-img{
+    width: 50%;
+
+}
+.cuide-do-ambiente-onde-voce-vive .cuide-do-ambiente-onde-voce-vive-img img{
+    width: 100%;
+}
+h3{
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cuide-do-ambiente-onde-voce-vive .cuide-do-ambiente-onde-voce-vive-text .residuos{
+    font-size: 20px;
+    text-align: left;
+}
+.card-item .nome-user p{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.card-item{
+    background-color: #b9fdb9;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.card-item img{
+    display: block;
+    margin: 10px auto;
+}
+.card-item:hover{
+    background-color: #4ff957;
+    margin-top: -5px;
+}
+.card-item:hover .nome-user {
+    color: white;
+    transition: 0.3s;
+}
+
+.footer{
+    background-color: #2aac2a;
+    text-align: center;
+}
+.footer img{
+    width: 50px;
+    padding: 2px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.Comprometidos{
+    background-color: rgba(0, 255, 0, 0.068);
+}
+.Comprometidos .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Comprometidos .Comprometidos-item{
+    text-align: center;
+    margin: 15px;
+    color: black;
+}
+.Comprometidos .Comprometidos-item img{
+    background-color: #2aac2a;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+.Comprometidos .Comprometidos-item p{
+    font-size: 18px;
+}
+
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #145514;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+}
+.Sobre-titulo{
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 83, 26);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.ti-verdola .container{
+    display: flex;
+    align-items: center;
+}
+
+.ti-verdola .ti-verdola-text h3{
+    font-size: 25px;
+
+}
+.ti-verdola .ti-verdola-text p{
+    margin: 5px 0 10px 0;
+}
+.ti-verdola .ti-verdola-img{
+    width: 180%;
+    margin-left: 3%;
+
+}
+.ti-verdola .ti-verdola-img img{
+    width: 100%;
+}
+
+.Instrucoes-titulo{
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 83, 26);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.instruc-t .descarte-img{
+    width: 150%;
+}
+.instruc-t .descarte-img img{
+    width: 100%;
+    margin-left: 5%;
+}
+.instruc-t .container{
+    display: flex;
+    align-items: center;
+}
+.eletrodescarte{
+    text-align: center;
+}
+
+nav .computer{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.instruc h3{
+    font-size: 25px;
+    text-align: left;
+}
